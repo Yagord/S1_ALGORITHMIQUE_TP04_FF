@@ -1,0 +1,132 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{EF58FD66-6B60-4852-B1EC-41D75F04F1C0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="TP04_EX01_VERSION1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TP04_EX01_VERSION2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TP04_EX02.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TP04_EX03_VERSION1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TP04_EX03_VERSION2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TP04_EX04_VERSION1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TP04_EX04_VERSION2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TP04_EX05.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TP04_EXSUPP01.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TP04_EX01_VERSION1">
+        <MSBuild Projects="TP04_EX01_VERSION1.dproj"/>
+    </Target>
+    <Target Name="TP04_EX01_VERSION1:Clean">
+        <MSBuild Projects="TP04_EX01_VERSION1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TP04_EX01_VERSION1:Make">
+        <MSBuild Projects="TP04_EX01_VERSION1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TP04_EX01_VERSION2">
+        <MSBuild Projects="TP04_EX01_VERSION2.dproj"/>
+    </Target>
+    <Target Name="TP04_EX01_VERSION2:Clean">
+        <MSBuild Projects="TP04_EX01_VERSION2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TP04_EX01_VERSION2:Make">
+        <MSBuild Projects="TP04_EX01_VERSION2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TP04_EX02">
+        <MSBuild Projects="TP04_EX02.dproj"/>
+    </Target>
+    <Target Name="TP04_EX02:Clean">
+        <MSBuild Projects="TP04_EX02.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TP04_EX02:Make">
+        <MSBuild Projects="TP04_EX02.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TP04_EX03_VERSION1">
+        <MSBuild Projects="TP04_EX03_VERSION1.dproj"/>
+    </Target>
+    <Target Name="TP04_EX03_VERSION1:Clean">
+        <MSBuild Projects="TP04_EX03_VERSION1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TP04_EX03_VERSION1:Make">
+        <MSBuild Projects="TP04_EX03_VERSION1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TP04_EX03_VERSION2">
+        <MSBuild Projects="TP04_EX03_VERSION2.dproj"/>
+    </Target>
+    <Target Name="TP04_EX03_VERSION2:Clean">
+        <MSBuild Projects="TP04_EX03_VERSION2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TP04_EX03_VERSION2:Make">
+        <MSBuild Projects="TP04_EX03_VERSION2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TP04_EX04_VERSION1">
+        <MSBuild Projects="TP04_EX04_VERSION1.dproj"/>
+    </Target>
+    <Target Name="TP04_EX04_VERSION1:Clean">
+        <MSBuild Projects="TP04_EX04_VERSION1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TP04_EX04_VERSION1:Make">
+        <MSBuild Projects="TP04_EX04_VERSION1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TP04_EX04_VERSION2">
+        <MSBuild Projects="TP04_EX04_VERSION2.dproj"/>
+    </Target>
+    <Target Name="TP04_EX04_VERSION2:Clean">
+        <MSBuild Projects="TP04_EX04_VERSION2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TP04_EX04_VERSION2:Make">
+        <MSBuild Projects="TP04_EX04_VERSION2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TP04_EX05">
+        <MSBuild Projects="TP04_EX05.dproj"/>
+    </Target>
+    <Target Name="TP04_EX05:Clean">
+        <MSBuild Projects="TP04_EX05.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TP04_EX05:Make">
+        <MSBuild Projects="TP04_EX05.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TP04_EXSUPP01">
+        <MSBuild Projects="TP04_EXSUPP01.dproj"/>
+    </Target>
+    <Target Name="TP04_EXSUPP01:Clean">
+        <MSBuild Projects="TP04_EXSUPP01.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TP04_EXSUPP01:Make">
+        <MSBuild Projects="TP04_EXSUPP01.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TP04_EX01_VERSION1;TP04_EX01_VERSION2;TP04_EX02;TP04_EX03_VERSION1;TP04_EX03_VERSION2;TP04_EX04_VERSION1;TP04_EX04_VERSION2;TP04_EX05;TP04_EXSUPP01"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TP04_EX01_VERSION1:Clean;TP04_EX01_VERSION2:Clean;TP04_EX02:Clean;TP04_EX03_VERSION1:Clean;TP04_EX03_VERSION2:Clean;TP04_EX04_VERSION1:Clean;TP04_EX04_VERSION2:Clean;TP04_EX05:Clean;TP04_EXSUPP01:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TP04_EX01_VERSION1:Make;TP04_EX01_VERSION2:Make;TP04_EX02:Make;TP04_EX03_VERSION1:Make;TP04_EX03_VERSION2:Make;TP04_EX04_VERSION1:Make;TP04_EX04_VERSION2:Make;TP04_EX05:Make;TP04_EXSUPP01:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
